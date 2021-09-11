@@ -2,7 +2,7 @@ import React from "react";
 function Header(props) {
 	return (
 		<h1>
-			{props.word}, {props.name}
+			{props.names.greeting}, {props.names.name}
 		</h1>
 	);
 }

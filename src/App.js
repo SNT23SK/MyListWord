@@ -4,7 +4,13 @@ import "./App.css";
 import Header from "./header/header";
 
 function App() {
-	const [name, setName] = React.useState([]);
+	const [names] = [
+		{
+			id: 1,
+			greeting: "Hello",
+			name: "World",
+		},
+	];
 	return (
 		<div className="App">
 			<form>
@@ -12,13 +18,9 @@ function App() {
 				<input type="text"></input>
 			</form>
 
-			<Header word="Hello" name={addName}></Header>
+			<Header names={names}></Header>
 		</div>
 	);
-
-	function addName() {
-		setName(name.concat({ name }));
-	}
 }
 
 export default App;
