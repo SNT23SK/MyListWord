@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className="App">
 			<form>
-				<label>Ваше имя</label>
+				<label> ВВедите Ваше имя</label>
 				<input type="text"></input>
 			</form>
 
