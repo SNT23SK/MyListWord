@@ -1,6 +1,10 @@
 import React from "react";
 
-function Greeting() {
-	return <li>Привет Мир </li>;
+function Greeting({ start }) {
+	return (
+		<li>
+			{start.greeting}, {start.name}!
+		</li>
+	);
 }
 export default Greeting;

@@ -12,7 +12,6 @@ function App() {
 	return (
 		<div className="App">
 			<h1> Привествия </h1>
-			{console.log("starts: ", starts)}
 			<AddWord />
 			<List starts={starts} />
 		</div>

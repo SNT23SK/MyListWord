@@ -6,7 +6,7 @@ function List(props) {
 		<div>
 			<ul className="list">
 				{props.starts.map((start) => {
-					return <Greeting />;
+					return <Greeting start={start} />;
 				})}
 			</ul>
 		</div>
