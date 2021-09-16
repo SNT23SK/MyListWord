@@ -5,15 +5,15 @@ import AddWord from "./List/AddWord";
 import List from "./List/List";
 
 function App() {
-	const starts = [
-		{ id: 1, greeting: "Hello", name: "World" },
-		{ id: 2, greeting: "Byenno", name: "Amigos" },
+	const cards = [
+		{ id: 1, eng: "Hello", rus: "Привет" },
+		{ id: 2, eng: "World", rus: "МИР" },
 	];
 	return (
 		<div className="App">
 			<h1> Привествия </h1>
 			<AddWord />
-			<List starts={starts} />
+			<List cards={cards} />
 		</div>
 	);
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import Greeting from "./Greeting";
+import Translate from "./Translate";
 
 function List(props) {
 	return (
 		<div>
 			<ul className="list">
-				{props.starts.map((start) => {
-					return <Greeting start={start} />;
+				{props.cards.map((card) => {
+					return <Translate card={card} />;
 				})}
 			</ul>
 		</div>
