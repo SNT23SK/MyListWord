@@ -9,11 +9,15 @@ function App() {
 		{ id: 1, eng: "Hello", rus: "Привет" },
 		{ id: 2, eng: "World", rus: "МИР" },
 	];
+
+	function addWord(eng, rus) {
+		console.log("Boom", eng, rus);
+	}
 	return (
 		<div className="App">
 			<h1> Words </h1>
-			<AddWord />
-			<List cards={cards} />
+			<AddWord onCreate={addWord} />
+			<List cards={cards} key={cards.id} />
 		</div>
 	);
 }

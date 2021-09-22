@@ -6,7 +6,7 @@ function List(props) {
 		<div>
 			<ul className="list">
 				{props.cards.map((card) => {
-					return <Translate card={card} />;
+					return <Translate card={card} key={card.id} />;
 				})}
 			</ul>
 		</div>

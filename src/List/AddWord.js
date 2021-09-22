@@ -9,14 +9,20 @@ function useInputValue(defaultValue = "") {
 	};
 }
 
-function AddWord() {
+function AddWord({ onCreate }) {
 	const inputEng = useInputValue();
 	const inputRus = useInputValue();
+
+	function submitHandler(event) {
+		event.preventDefault();
+		onCreate(inputEng.value(), inputRus.value());
+	}
+
 	return (
-		<form onSubmit={console.log("click button")}>
+		<form onSubmit={submitHandler}>
 			<input {...inputEng.bind}></input>
 			<input {...inputRus.bind}></input>
-			<button type="submit"> Add word</button>
+			<button type="submit">Add word</button>
 		</form>
 	);
 }
