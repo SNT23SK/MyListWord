@@ -11,7 +11,7 @@ function App() {
 	];
 	return (
 		<div className="App">
-			<h1> Привествия </h1>
+			<h1> Words </h1>
 			<AddWord />
 			<List cards={cards} />
 		</div>
